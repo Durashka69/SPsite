@@ -11,13 +11,7 @@ class PositionListCreateView(ListCreateAPIView):
 class PositionRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Position.objects.all()
     serializer_class = PositionSerializers
-
-
-class ProjectListCreateView(ListCreateAPIView):
-    queryset = Project.objects.all()
-    serializer_class = ProjectSerializers
-
-
+    
 class ProjectRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Project.objects.all()
     serializer_class = ProjectSerializers
@@ -41,3 +35,4 @@ class PersonOutListCreateView(ListCreateAPIView):
 class PersonOutRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Person.objects.all()
     serializer_class = PersonOutSerializers
+
